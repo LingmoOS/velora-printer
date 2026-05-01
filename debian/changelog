@@ -1,3 +1,9 @@
+velora-printer (1.0.21.lingmo.1) unstable; urgency=medium
+
+  * new release for Lingmo OS.
+
+ -- Lingmo OS Team <team@lingmo.org>  Fri, 01 May 2026 21:14:00 +0800
+
 dde-printer (1.0.20-1+1060) unstable; urgency=medium
 
   * update version
