@@ -28,6 +28,7 @@ jobs:
       - name: Fix script permissions
         run: |
           chmod +x src/Printer/translate_generation.sh
+          chmod +x src/Deamon/translate_generation.sh
 
       # - name: Install build dependencies
       #   run: mk-build-deps -i -t "apt-get --yes" -r
