@@ -57,7 +57,7 @@ static bool isHplipDrv(const QString &ppd_name)
 
 static void dbusAutoStart(const QString &filePath)
 {
-    QDBusInterface interface("com.deepin.printer.manager", "/com/deepin/printer/manager", "com.deepin.printer.manager", QDBusConnection::systemBus());
+    QDBusInterface interface("com.lingmo.printer.manager", "/com/lingmo/printer/manager", "com.lingmo.printer.manager", QDBusConnection::systemBus());
     interface.call("LaunchAutoStart", filePath);
 }
 
@@ -368,7 +368,7 @@ void InstallInterface::updateSourceChanged(const QDBusMessage &msg)
 
 endUpdate:
     qCDebug(COMMONMOUDLE) << "Disconnect com.deepin.lastore updateSourceChanged";
-    QDBusConnection::systemBus().disconnect("com.deepin.lastore",
+    QDBusConnection::systemBus().disconnect("com.lingmo.lastore",
                                             m_updatePath,
                                             "org.freedesktop.DBus.Properties",
                                             "PropertiesChanged",
@@ -408,7 +408,7 @@ void InstallInterface::startInstallPackages(bool status)
                 QDBusReply<QDBusObjectPath> updatePath = interface->call("UpdateSource");
                 m_updatePath = updatePath.value().path();
 
-                if (QDBusConnection::systemBus().connect("com.deepin.lastore",
+                if (QDBusConnection::systemBus().connect("com.lingmo.lastore",
                                                          m_updatePath,
                                                          "org.freedesktop.DBus.Properties",
                                                          "PropertiesChanged",
@@ -464,7 +464,7 @@ void InstallInterface::stop()
                                             "PropertiesChanged",
                                             this, SLOT(propertyChanged(QDBusMessage)));
 
-    QDBusConnection::systemBus().disconnect("com.deepin.lastore",
+    QDBusConnection::systemBus().disconnect("com.lingmo.lastore",
                                             m_updatePath,
                                             "org.freedesktop.DBus.Properties",
                                             "PropertiesChanged",

@@ -29,7 +29,7 @@ binary.path = $${PREFIX}/lib/deepin-daemon
 binary.files = $${OUT_PWD}/$${TARGET}
 
 service.path = $${PREFIX}/share/dbus-1/system-services
-service.files = $$PWD/data/com.deepin.printer.manager.service
+service.files = $$PWD/data/com.lingmo.printer.manager.service
 
 dbus.path = /etc/dbus-1/system.d
 dbus.files = $$PWD/data/com.deepin.printer.manager.conf

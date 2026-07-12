@@ -50,7 +50,7 @@ trans.path =  $${PREFIX}/share/dde-printer-helper/translations
 trans.files = $${PWD}/translations/*.qm
 
 service.path = /usr/share/dbus-1/services
-service.files = $${PWD}/com.deepin.print.helper.service
+service.files = $${PWD}/com.lingmo.print.helper.service
 
 INSTALLS += target trans service
 }

@@ -1,4 +1,4 @@
 [D-BUS Service]
-Name=com.deepin.printer.manager
+Name=com.lingmo.printer.manager
 Exec=/usr/bin/false
 SystemdService=dde-printer-manager.service

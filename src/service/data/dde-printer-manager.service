@@ -3,7 +3,7 @@ Description=Deepin Printer Manager
 
 [Service]
 Type=dbus
-BusName=com.deepin.printer.manager
+BusName=com.lingmo.printer.manager
 User=root
 ExecStart=/usr/lib/deepin-daemon/dde-printer-manager
 CapabilityBoundingSet=CAP_SYS_PTRACE

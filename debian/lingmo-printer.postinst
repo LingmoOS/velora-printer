@@ -2,7 +2,7 @@
 
 # export APTFILEPATH="/etc/apt/sources.list.d/driver.list"
 #kill UI process
-killall dde-printer
+killall lingmo-printer
 
 #restart deamon process
 killall -USR1 dde-printer-helper
@@ -23,7 +23,7 @@ killall -USR1 dde-printer-helper
 #       print "deb https://community-packages.deepin.com/driver/ driver non-free";           \
 #     } else if ( MajorVersion == "23" ) {                                                    \
 #       print "deb https://community-packages.deepin.com/driver-23/ driver non-free";            \
-#     }   
+#     }
 # } else if ( ProductType == "Desktop" && EditionName == "Professional" ) {                   \
 #     print "deb https://pro-driver-packages.uniontech.com eagle non-free";                    \
 # } else if ( ProductType == "Desktop" && EditionName == "Home" ) {                           \
@@ -37,7 +37,7 @@ killall -USR1 dde-printer-helper
 
 # if [ -n "${REPO}" ]; then
 #     mkdir -p /etc/apt/sources.list.d/
-#     echo "# Written by dde-printer" > $APTFILEPATH
+#     echo "# Written by lingmo-printer" > $APTFILEPATH
 #     echo "${REPO}" >> $APTFILEPATH
 # fi
 

@@ -669,7 +669,7 @@ bool isIpv4Address(const QString &str)
 
 int managerCanonPrinter(const QString &action, const QStringList &args)
 {
-    QDBusInterface interface("com.deepin.printer.manager", "/com/deepin/printer/manager", "com.deepin.printer.manager", QDBusConnection::systemBus());
+    QDBusInterface interface("com.lingmo.printer.manager", "/com/lingmo/printer/manager", "com.lingmo.printer.manager", QDBusConnection::systemBus());
     QDBusReply<int> ret;
     if (action == "add") {
         ret = interface.call("CanonPrinterInstall", args);

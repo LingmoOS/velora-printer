@@ -10,7 +10,7 @@
 class MainJob : public QObject
 {
     Q_OBJECT
-    Q_CLASSINFO("D-Bus Interface", "org.deepin.ddeprinter")
+    Q_CLASSINFO("D-Bus Interface", "org.lingmo.ddeprinter")
 
 public:
     explicit MainJob(QObject *parent = nullptr);

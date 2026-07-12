@@ -1,4 +1,4 @@
-Source: velora-printer
+Source: lingmo-printer
 Section: misc
 Priority: optional
 Maintainer: Lingmo OS Team <team@lingmo.org>
@@ -18,11 +18,11 @@ Build-Depends:
  libusb-1.0-0-dev,
  libgtest-dev
 Standards-Version: 4.5.0
-Homepage: https://github.com/LingmoOS/velora-printer
+Homepage: https://github.com/LingmoOS/lingmo-printer
 
-Package: dde-printer
+Package: lingmo-printer
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libnss-winbind, libdeepin-service-framework, deepin-service-manager, libnss-mdns
+Depends: ${shlibs:Depends}, ${misc:Depends}, libnss-winbind, liblingmo-service-framework, lingmo-service-manager, libnss-mdns
 Description: Deepin Print Manager is a eazy tool to manage printers.
  Deepin Print Manager is a printer management tool,which supports adding and removing printers,managing print jobs and so on.
  

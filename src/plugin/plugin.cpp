@@ -221,7 +221,7 @@ extern "C" int DSMRegister(const char *name, void *data)
         QDBusConnection::ExportAllProperties;
 
     auto connection = reinterpret_cast<QDBusConnection *>(data);
-    connection->registerObject("/org/deepin/ddeprinter", service, opts);
+    connection->registerObject("/org/lingmo/ddeprinter", service, opts);
 
     cupsSignal = new SignalCups();
     cupsSignal->initWatcher();
